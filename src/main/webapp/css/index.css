@@ -1,0 +1,9 @@
+@charset "UTF-8";
+body { margin: 0; font-family: Arial, sans-serif; }
+.main-header { background: #222; color: #fff; padding: 20px; text-align: center;}
+.main-header nav a { margin: 0 15px; color: #fff; text-decoration: none;}
+.hero-section { background: url('../images/hero.jpg') no-repeat center/cover; height: 400px; color: #fff; text-align: center; padding-top: 100px;}
+.categories { padding: 30px; text-align: center;}
+.cat-box { display: inline-block; width: 150px; margin: 10px; }
+.cat-box img { width: 100px; }
+footer { text-align: center; padding: 15px; background: #111; color: #fff;}

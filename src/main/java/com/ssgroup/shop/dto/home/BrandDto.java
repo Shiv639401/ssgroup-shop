@@ -1,0 +1,13 @@
+package com.ssgroup.shop.dto.home;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
+public class BrandDto {
+    private Long id;
+    private String name;
+    private String logoUrl; // optional
+}

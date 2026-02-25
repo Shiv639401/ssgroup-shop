@@ -1,0 +1,20 @@
+package com.ssgroup.shop.entity;
+public enum OrderStatus {
+
+	  CREATED,
+	  PAYMENT_PENDING,
+	  PAID,
+
+	  PACKED,
+	  SHIPPED,
+	  DELIVERED,
+	  CANCELLED,
+
+	  RETURN_REQUESTED,
+	  RETURN_APPROVED,
+	  RETURNED,
+
+	  REPLACEMENT_REQUESTED,
+	  REPLACEMENT_APPROVED,
+	  REPLACED
+	}
