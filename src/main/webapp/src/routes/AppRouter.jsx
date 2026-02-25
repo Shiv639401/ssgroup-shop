@@ -13,7 +13,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 
 /* ===== USER PAGES ===== */
-import Cart from "../pages/Cart";
+import Cart from "../pages/cart";
 import Checkout from "../pages/Checkout";
 import Orders from "../pages/Orders";
 import Profile from "../pages/Profile";
