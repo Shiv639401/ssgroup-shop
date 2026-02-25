@@ -1,15 +1,13 @@
-# Node
-node_modules/
-dist/
-
-# Spring Boot
+# ===== Spring Boot =====
 target/
 *.jar
 *.class
 
-# Logs
-*.log
+# ===== React (inside webapp) =====
+src/main/webapp/node_modules/
+src/main/webapp/dist/
+src/main/webapp/.env
 
-# Environment files
+# ===== General =====
 .env
-application-prod.properties
+*.log
