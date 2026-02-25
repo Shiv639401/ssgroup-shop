@@ -3,11 +3,11 @@ import axios from "axios";
 /* ================= CREATE INSTANCE ================= */
 
 const api = axios.create({
-  baseURL: "http://localhost:8080/api",
+  baseURL: import.meta.env.VITE_API_BASE_URL,
   headers: {
     "Content-Type": "application/json",
   },
-  withCredentials: false, // change to true if using cookies
+  withCredentials: false,
 });
 
 /* ================= REQUEST INTERCEPTOR ================= */
@@ -34,14 +34,12 @@ api.interceptors.response.use(
   (error) => {
     const status = error?.response?.status;
 
-    // Auto logout on unauthorized
     if (status === 401) {
       localStorage.removeItem("token");
       localStorage.removeItem("accessToken");
       window.location.replace("/login");
     }
 
-    // Optional: handle 403
     if (status === 403) {
       console.warn("Forbidden request");
     }
