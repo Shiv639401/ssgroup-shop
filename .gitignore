@@ -1,0 +1,15 @@
+# Node
+node_modules/
+dist/
+
+# Spring Boot
+target/
+*.jar
+*.class
+
+# Logs
+*.log
+
+# Environment files
+.env
+application-prod.properties
